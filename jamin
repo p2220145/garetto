@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ガレット・デ・ロワ</title>
+    <link rel="stylesheet" href="garetto.css">
+    <script src="garetto.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>JAMIN</h1>
+    </header>
+    <main>
+        <!-- セクション1 -->
+        <section>
+            <img src="garetto1.jpg" alt="ガレット・デ・ロワ" class="center-image fade-in">
+            <h2 class="fade-in">ガレット・デ・ロワ</h2>
+            <p class="fade-in">
+                ガレット・デ・ロワは、フランスの伝統的なお菓子で、1月6日の公現祭（エピファニー）に食べられます。フランスでは一月中に食べられる季節菓子です。バターたっぷりのパイ生地に、アーモンドクリームが詰まったリッチな味わいが特徴です。中には「フェーヴ」と呼ばれる小さな陶器が隠されており、切り分けられたケーキの中からフェーヴを見つけた人は、その日一日王様または女王様として祝福されます。そしてその幸運は一年続くとも言われています。
+            </p>
+            <p class="fade-in">
+                JAMINでは安全を考慮し、フェーヴの代わりにアーモンドを一粒入れています。フランス製陶器フェーブと王冠は、ガレット・デ・ロワに添えてお渡しします。
+            </p>
+            <img src="garetto3.png" alt="ガレット・デ・ロワ" class="center-image2 fade-in">
+            <p class="fade-in">
+                年に一度の特別な伝統菓子をぜひお楽しみください。
+            </p>
+        </section>
+
+        <!-- セクション2 -->
+        <section>
+            <h2 class="fade-in">こだわりの製法</h2>
+            <img src="garetto2.jpg" alt="ガレット・デ・ロワ" class="center-image3 fade-in">
+            <p class="fade-in">
+                当店のガレット・デ・ロワは、フランス伝統の製法(アーティザナル)で作っています。時代は進み、現在はフランスでもこの製法で作られることは少ないようです。<br>
+                ｘ日かけ風味豊かなフランス産バターと生地をなじませます。伸ばしては折り込み一日寝かせる、これを繰り返し手作業で行っています。時間をかけ作った本格的なパイ生地と特製のクレームダマンドの組み合わせは絶品です。
+            </p>
+        </section>
+
+      </section>
+
+      <!-- クロージングセクション -->
+      <section1 id="closingSection" class="closing">
+         
+          <p>
+              18㎝　2600円(2808)<br>
+              21㎝　2800円(3024)<br>
+              完全予約制で数に限りがございます。
+              ご予約はお早めにお願いいたします。
+          </p>
+      </section1>
+    </main>
+</body>
+</html>
+/* 全体設定 */
+body {
+  margin: 0;
+  font-family:serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004e00; /* 深緑 */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* メインコンテンツ */
+main {
+  margin-top: 60px; /* ヘッダー分の高さを確保 */
+  padding: 20px;
+}
+
+/* セクション */
+section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section1 {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  
+  background: #ffffff;
+  
+  
+}
+
+/* 画像設定 */
+.center-image {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.center-image2{
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 5px;
+  
+}
+.center-image3 {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+ 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.closing {
+  display: none;  /* 最初は非表示 */
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+  opacity: 0; /* 初期状態で透明 */
+  transition: opacity 1s ease-in-out; /* アニメーションの設定 */
+}
+
+/* スクロールして現れるアニメーション */
+.closing.show {
+  display: block;
+  opacity: 1; /* アニメーション後に表示 */
+}
+
+/* ふわっと表示アニメーション */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+  .center-image,
+  .center-image2,
+  .center-image3 {
+    margin-bottom: 15px;
+  }
+  main {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+// ページが読み込まれた時の処理
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('ガレット・デ・ロワページが読み込まれました。');
+
+  // すべてのfade-in要素を取得
+  const fadeInElements = document.querySelectorAll('.fade-in');
+
+  // スクロール時に要素を表示する関数
+  const showElementsOnScroll = () => {
+    fadeInElements.forEach((element) => {
+      const rect = element.getBoundingClientRect(); // 要素の位置を取得
+      if (rect.top < window.innerHeight * 0.9) {
+        element.classList.add('show'); // 表示するクラスを追加
+      }
+    });
+  };
+
+  // 初回実行
+  showElementsOnScroll();
+
+  // スクロール時に関数を実行
+  window.addEventListener('scroll', showElementsOnScroll);
+});
+// ページが読み込まれた時の処理
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('ガレット・デ・ロワページが読み込まれました。');
+
+  // クロージングセクションを取得
+  const closingSection = document.getElementById('closingSection');
+
+  // スクロールイベントを監視
+  window.addEventListener('scroll', () => {
+    // クロージングセクションが画面に表示されたら
+    const sectionPosition = closingSection.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (sectionPosition <= screenHeight * 0.8) {  // 画面の80%に到達したら
+      closingSection.classList.add('show'); // クラスを追加して表示
+    }
+  });
+});
